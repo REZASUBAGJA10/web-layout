@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Dasar</title>
+    <style>
+        .header{
+            background-color:rgb(247, 245, 245);
+            min-height: 50px;
+            text-align: center;
+        }
+        .content{
+            background-color: rgb(248, 246, 241);
+            min-height: 100px;
+            
+            
+
+        }
+        .footer{
+            background-color: #34495e;
+            min-width: 50px;
+            text-align: center;
+            float: left;
+            width: 800px;
+            margin: 10px;
+
+        }
+        .contaier{
+            width: 800px;
+            margin: 0 auto;
+            
+            
+        }
+        .menu ul{
+            padding: 0%;
+        }
+        .menu ul li{
+            display: inline-block;
+            position: relative;
+        }
+        .menu ul li a{
+            padding: 10px 20px;
+            text-decoration: none;
+            
+        }
+        .logo img{
+            width: 200px;
+            
+
+        }
+        .thumbnail{
+            background-color:rgb(125, 128, 129);
+            text-align: center;
+            padding: 10px;
+            width: 225px;
+            margin: 10px;
+            float: left;
+        }
+        .thumbnail img{
+            width: 100%;
+        }
+        .btn{
+            border-color: red;
+            color: rgb(247, 240, 240);
+            border-radius: 10px;
+            background-color: red;
+            height: 50px;
+            width: 100px;
+
+        }
+        .btn:hover{
+            border-color: rgb(13, 167, 245);
+            color: rgb(248, 12, 12);
+            border-radius: 10px;
+            background-color: rgb(17, 201, 247);
+            height: 50px;
+            width: 100px;
+            animation: pulse-animation 2s infinite;
+
+
+        }
+
+        @keyframes pulse-animation{
+            0%{
+                box-shadow: 0 0 0 0px rgb(0, 107, 139);
+            }
+            100%{
+                box-shadow: 0 0 0 20px rgba(191, 241, 7, 0.404);
+            }
+        }
+        ul.submenu{
+            background-color: rgb(221, 225, 230);
+            border: 1px solid #ccc;
+            text-align: left;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            display: none;
+        }
+        ul.submenu li{
+            display: block;
+        }
+        ul.submenu li{
+            display: block;
+            padding: 5px 10px;
+
+        }
+        
+        ul.submenu li{
+            display: block;
+            padding: 5px 10px;
+
+        }
+        .menu ul li:hover ul.submenu{
+            display: block; 
+        }
+        .jumbotron{
+            width: 100%;
+            padding: 80px 40px;
+            box-sizing: border-box;
+            text-align: center;
+            color: rgb(240, 232, 232);
+            background-color: #686767;
+            background-image: url(image/ipgg22.png);
+            background-size: cover;
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="image/ip1.jpg" alt="logo">
+                
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li>
+                        <a href="">About</a>
+                        <ul class="submenu">
+                            <li><a href="">CV</a></li>
+                            <li><a href="">Education</a></li>
+                            <li><a href="">Portopolio</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Contact</a></li>
+                
+            </div>
+        </div>
+        <div class="jumbotron">
+            <h2>welcome to toko iphone</h2>
+            <p>selamat belanja ditoko ini</p>
+        </div>
+        </div>
+        <div class="content">
+            <h2 style="margin-left: 10px;">Our Produk</h2>
+            <div class="thumbnail">
+                <img src="image/ip2.jpg" alt="">
+                <h2>product 1</h2>
+                <p>RP 250.000</p>
+                <a href=""><button class="btn">Detail</button></a>
+                
+            </div>
+            <div class="thumbnail">
+                <img src="image/ip3.jpg" alt="logo">
+                <h2>Produk 2</h2>
+                <p>RP 250.000</p>
+                <a href=""><button class="btn">Detail</button></a>
+
+
+            </div>
+            <div class="thumbnail">
+                <img src="image/ip3.jpg" alt="logo">
+                <h2>product 3</h2>
+                <p>RP 250.000</p>
+                <a href=""><button class="btn">Detail</button></a>
+        
+            </div>
+            <div class="thumbnail">
+                <img src="image/ip2.jpg" alt="logo">
+                <h2>Produk 2</h2>
+                <p>RP 250.000</p>
+                <a href=""><button class="btn">Detail</button></a>
+            </div>
+            <div class="thumbnail">
+                <img src="image/ip2.jpg" alt="logo">
+                <h2>R15</h2>
+                <p>RP 250.000</p>
+                <a href=""><button class="btn">Detail</button></a>
+            </div>
+            <div class="thumbnail">
+                <img src="image/ip2.jpg" alt="logo">
+                <h2>R15</h2>
+                <p>RP 250.000</p>
+                <a href=""><button class="btn">Detail</button></a>
+            </div>
+        
+        <div class="footer">
+            <p>coppyright 2022 my page</p>
+        </div>
+    </div>
+</body>
+</html>

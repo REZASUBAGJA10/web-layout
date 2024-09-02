@@ -1,0 +1,16 @@
+h1,p{
+    color: rgb(27, 108, 175);
+}
+i{
+    color: hsl(180, 79%, 54%);
+}
+
+.box{
+    border: 1px solid black;
+
+}
+
+#font{
+    fon-size: 20pt;
+}
+
